@@ -2,19 +2,52 @@
 <html>
   <head>
     <title>contact</title>
+  
+    <style>
+      .lable{
+        font-family: 'Amatic SC', cursive;
+      }
+      #id1{
+color: brown;
+margin-left: 30px;
+margin-top: 30px;
+      }
+
+input[type="text"]
+{
+text-transform:uppercase;
+color: blue;
+}
+input[type="email"]
+{
+  color: rgb(184, 11, 25);
+}
+#id2:hover{
+  color:blue;
+background-color:rgb(236, 111, 132);
+}
+input[type="reset"]:hover{
+  color: fuchsia;
+}
+
+    </style>
   </head>
   <body><table>
     <form>
-      <h3>Contact Us:</h3>
-     <tr> <td><lable>Full Name:</lable></td>
-     <td> <input type="text" required autofocus placeholder="Max character length=40"></td></tr><br>
-      <tr> <td><label> Mobile No:</label></td>
+      <h3 id="id1">Contact Us:</h3>
+     <tr> <td><lable  class="lable">Full Name:</lable></td>
+     <td> <input type="text" required autofocus maxlength="40" placeholder="Max character length=40"></td></tr><br>
+
+      <tr> <td><label class="lable"> Mobile No:</label></td>
       <td><input type="number" /></tr></td><br>
-      <tr><td><label>Email:</label></td>
+
+      <tr><td><label  class="lable">Email:</label></td>
       <td><input type="email" placeholder="ex.abc@gmail.com"></td></tr>
-    <tr><td><lable>Enquiry:</lable></td>
+
+    <tr><td><lable class="lable">Enquiry:</lable></td>
     <td><textarea cols="35" rows="7"></textarea> </td></tr><br>
-    <tr><td><input type="button" value="submit">&nbsp;&nbsp;&nbsp;
+
+    <tr><td ><input type="button" value="submit" id="id2" >
     <input type="reset" value="clear"></tr></td>
     </form>
 
